@@ -1,0 +1,25 @@
+# Qmake Objects, Target and User Settings
+build/*
+target/*
+*.pro.user
+.qmake*
+
+# AVR Build Files
+*.eep
+*.elf
+*.lss
+*.lst
+*.map
+*.hex
+*.sym
+*.o
+
+# Application Build Files
+*.obj
+*.run
+*.bin
+*.dep
+
+# Eagle Schematics and Board Backup files
+*.b#[0-9]
+*.s#[0-9]
