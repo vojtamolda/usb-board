@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/choose-language.png</file>
+        <file>icon/configure.png</file>
+        <file>icon/attenuator.png</file>
+        <file>icon/view-refresh.png</file>
+        <file>icon/dialog-cancel.png</file>
+        <file>icon/dialog-ok.png</file>
+        <file>icon/edit-redo.png</file>
+        <file>icon/edit-copy.png</file>
+        <file>icon/edit-cut.png</file>
+        <file>icon/edit-paste.png</file>
+        <file>icon/edit-undo.png</file>
+        <file>language/cs.png</file>
+        <file>language/de.png</file>
+        <file>language/en.png</file>
+        <file>language/fr.png</file>
+        <file alias="language/cs.qm">language/attenuator-cs.qm</file>
+        <file alias="language/de.qm">language/attenuator-de.qm</file>
+        <file alias="language/fr.qm">language/attenuator-fr.qm</file>
+    </qresource>
+</RCC>

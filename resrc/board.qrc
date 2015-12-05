@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/choose-language.png</file>
+        <file>icon/configure.png</file>
+        <file>icon/dialog-cancel.png</file>
+        <file>icon/dialog-ok.png</file>
+        <file>icon/edit-copy.png</file>
+        <file>icon/edit-cut.png</file>
+        <file>icon/edit-paste.png</file>
+        <file>icon/edit-redo.png</file>
+        <file>icon/edit-undo.png</file>
+        <file>icon/board.png</file>
+        <file>icon/view-refresh.png</file>
+        <file>language/en.png</file>
+        <file>language/fr.png</file>
+        <file>language/cs.png</file>
+        <file alias="language/cs.qm">language/board-cs.qm</file>
+        <file alias="language/fr.qm">language/board-fr.qm</file>
+    </qresource>
+</RCC>

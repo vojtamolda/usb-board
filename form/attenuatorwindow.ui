@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QAttenuatorWindow</class>
+ <widget class="QMainWindow" name="QAttenuatorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>USB Attenuator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resrc/attenuator.qrc">
+    <normaloff>:/icon/attenuator.png</normaloff>:/icon/attenuator.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QAttenuatorWidget" name="attenuatorWidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+   </widget>
+   <widget class="QMenu" name="menuDevice">
+    <property name="title">
+     <string>&amp;Device</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <widget class="QMenu" name="menuLanguage">
+     <property name="title">
+      <string>&amp;Language</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../resrc/attenuator.qrc">
+       <normaloff>:/icon/choose-language.png</normaloff>:/icon/choose-language.png</iconset>
+     </property>
+     <addaction name="actionDefault"/>
+     <addaction name="separator"/>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionGerman"/>
+     <addaction name="actionFrench"/>
+     <addaction name="actionCzech"/>
+    </widget>
+    <addaction name="menuLanguage"/>
+   </widget>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuDevice"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/attenuator.png</normaloff>:/icon/attenuator.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutRole</enum>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/edit-cut.png</normaloff>:/icon/edit-cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;ut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/edit-copy.png</normaloff>:/icon/edit-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;opy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/edit-paste.png</normaloff>:/icon/edit-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+  </action>
+  <action name="actionCzech">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/language/cs.png</normaloff>:/language/cs.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Czech</string>
+   </property>
+  </action>
+  <action name="actionGerman">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/language/de.png</normaloff>:/language/de.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;German</string>
+   </property>
+   <property name="toolTip">
+    <string>German</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/language/en.png</normaloff>:/language/en.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/edit-undo.png</normaloff>:/icon/edit-undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Default</string>
+   </property>
+   <property name="toolTip">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionFrench">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/language/fr.png</normaloff>:/language/fr.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;French</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/edit-redo.png</normaloff>:/icon/edit-redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Connect</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resrc/attenuator.qrc">
+     <normaloff>:/icon/dialog-cancel.png</normaloff>:/icon/dialog-cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Disconnect</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QAttenuatorWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">attenuatorwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resrc/attenuator.qrc"/>
+ </resources>
+ <connections/>
+</ui>
